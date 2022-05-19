@@ -17,11 +17,11 @@ steps:
   # install dependencies
   - name: python
     entrypoint: pip
-    args: ["install", "-r", "utils/requirements.txt", "--user"]
+    args: ["install", "-r", "composer/cicd_sample/utils/requirements.txt", "--user"]
 
   # run
   - name: python
     entrypoint: python
-    args: ["utils/add_dags_to_composer.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
+    args: ["composer/cicd_sample/utils/add_dags_to_composer.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
 
 # [END composer_cicd_dagsync_yaml]
