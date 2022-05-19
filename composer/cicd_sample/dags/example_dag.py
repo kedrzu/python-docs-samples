@@ -17,6 +17,7 @@ from airflow import models
 from airflow.operators import bash
 
 # foobar
+# bar
 
 # If you are running Airflow in more than one time zone
 # see https://airflow.apache.org/docs/apache-airflow/stable/timezone.html
